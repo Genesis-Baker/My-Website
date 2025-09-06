@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <style>
+    /* -------------------
+       COLOR VARIABLES
+    ------------------- */
+    :root {
+      --yellow: #FFC907;
+      --navy: #003366;
+      --teal: #77ABBB;
+      --terracotta: #BF6C46;
+      --light-gray: #F5F5F5;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light-gray);
+      color: #333;
+    }
+
+    /* -------------------
+       HEADER
+    ------------------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+    }
+
+    header img.logo {
+      height: 40px;
+    }
+
+    header a.signin {
+      background: var(--teal);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* -------------------
+       HERO SECTION
+    ------------------- */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--terracotta);
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 2rem;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    /* -------------------
+       BULLETS (Jerry cans)
+    ------------------- */
+    .bullets {
+      margin-bottom: 2rem;
+    }
+
+    .bullet {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .bullet img {
+      width: 28px;
+      height: auto;
+      margin-right: 0.75rem;
+    }
+
+    /* -------------------
+       DONATE BOX
+    ------------------- */
+    .donate-box {
+      background: #fff3e6;
+      padding: 1rem;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .donate-box input {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.5rem;
+      flex: 1;
+    }
+
+    .donate-box button {
+      background: var(--yellow);
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* -------------------
+       HERO IMAGE
+    ------------------- */
+    .hero-photo {
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      border: 14px solid var(--yellow);
+      border-radius: 22px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+      .hero-photo {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Charity_Water_logo.svg/2560px-Charity_Water_logo.svg.png" 
+         alt="charity: water logo" class="logo">
+    <a href="#" class="signin">SIGN IN</a>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Give in Seconds.<br>See the Impact Forever.</h1>
+      <p>
+        Give in seconds from your phone and watch your impact unfold. 
+        100% of your gift funds <span style="color: var(--teal); font-weight:bold;">clean, sustainable water</span> 
+        projects for someone in need with updates you can follow every step of the way.
+      </p>
+
+      <!-- Bullets with jerry can icons -->
+      <div class="bullets">
+        <div class="bullet">
+    
+          <img src="images/jerry_can_yellow.png" alt="Jerry Can Icon">
+
+          <span><strong>100% to Clean Water:</strong> Every dollar goes straight to water projects.</span>
+        </div>
+        <div class="bullet">
+          <img src="images/jerry_can_yellow.png" alt="Jerry Can Icon">
+
+ alt="Jerry Can Icon">
+          <span><strong>Sustainable Solutions:</strong> Local partners build lasting systems.</span>
+        </div>
+        <div class="bullet">
+          <img src="images/jerry_can_yellow.png" alt="Jerry Can Icon">
+
+          <span><strong>Join The Movement:</strong> Together, we can end the water crisis.</span>
+        </div>
+      </div>
+
+      <!-- Donate Box -->
+      <div class="donate-box">
+        <input type="text" placeholder="Enter an amount to give:">
+        <button>Donate Today!</button>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <img class="hero-photo" src="images/7255_Ethiopia_2019_Cg-.jpg" alt="Girl collecting water">
+  </section>
+</body>
+</html>
